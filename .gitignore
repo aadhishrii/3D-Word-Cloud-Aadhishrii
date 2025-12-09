@@ -1,0 +1,15 @@
+# Python virtual environment
+Backend/.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Node packages
+Frontend/node_modules/
+
+# Vite build output (if any)
+dist/
+
+# OS & editor files
+.DS_Store
