@@ -6,20 +6,27 @@ The backend uses FastAPI to fetch article text, extract keywords using TF-IDF, a
 
 ## Project Structure
 Backend/
+
   app/
+  
     main.py
     fetcher.py
     nlp.py
     __init__.py
+    
   requirements.txt
 
 Frontend/
+
   src/
+  
     App.tsx
     api.ts
     types.ts
     components/
+    
       WordCloud3D.tsx
+      
   package.json
 
 setup_and_run.sh
@@ -27,7 +34,7 @@ README.md
 
 ## Running the Project
 
-###Prerequisites
+### Prerequisites
 
 Python 3.9 or higher
 
@@ -35,11 +42,12 @@ Node.js 18 or higher
 
 Bash shell (macOS, Linux, or Git Bash on Windows)
 
-One-Command Setup and Run
+### One-Command Setup and Run
 
 From the project root directory, run:
 
 ./setup_and_run.sh
+
 
 
 This script will:
@@ -60,38 +68,45 @@ Open http://localhost:5173
  in your browser to use the application.
 
 ## How It Works
-Backend (FastAPI)
 
-Fetches article HTML from a provided URL.
+### Backend (FastAPI) 
 
-Extracts readable text using BeautifulSoup.
+1. Fetches article HTML from a provided URL.
 
-Cleans and preprocesses text.
+2. Extracts readable text using BeautifulSoup.
 
-Uses scikit-learn TF-IDF to extract important keywords.
+3. Cleans and preprocesses text.
 
-Returns a JSON response of words with associated weights.
+4. Uses scikit-learn TF-IDF to extract important keywords.
 
-API endpoint:
+5. Returns a JSON response of words with associated weights.
+
+
+
+#### API endpoint:
 
 POST /analyze
 {
   "url": "<article_url>"
 }
 
-Frontend (React + TypeScript)
 
-Input field to enter a URL.
+### Frontend (React + TypeScript)
 
-Sends the URL to the backend.
+1. Input field to enter a URL.
 
-Receives keyword data.
+2. Sends the URL to the backend.
 
-Renders a 3D word cloud using React Three Fiber.
+3. Receives keyword data.
 
-Word size and color are based on keyword weight.
+4. Renders a 3D word cloud using React Three Fiber.
+
+5. Word size and color are based on keyword weight.
+
+
 
 ## Libraries Used
+
 Backend
 
 fastapi
@@ -121,6 +136,7 @@ three
 @react-three/drei
 
 axios
+
 
 ## Notes
 
