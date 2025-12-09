@@ -7,21 +7,28 @@ The backend uses FastAPI to fetch article text, extract keywords using TF-IDF, a
 ## Project Structure
 
 Backend/
+
   app/
     main.py
     fetcher.py
     nlp.py
-    __init__.py    
+    __init__.py  
+    
   requirements.txt
+  
 Frontend/
+
   src/  
     App.tsx
     api.ts
     types.ts
-    components/    
-      WordCloud3D.tsx     
+    components/ 
+      WordCloud3D.tsx  
+      
   package.json
+  
 setup_and_run.sh
+
 README.md
 
 ## Running the Project
