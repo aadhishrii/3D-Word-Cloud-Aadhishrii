@@ -1,3 +1,8 @@
+#root {
+  max-width: none !important;
+  width: 100vw !important;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
