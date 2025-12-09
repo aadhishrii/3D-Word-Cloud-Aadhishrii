@@ -6,8 +6,16 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
 
 
-EN_STOPWORDS = set(stopwords.words("english"))
+BASIC_STOPWORDS = set(stopwords.words("english"))
 
+CUSTOM_STOPWORDS = {
+    "said", "would", "also", "could", "told", "says", "say", "mr",
+    "mrs", "new", "one", "two", "three", "make", "made", "still",
+    "last", "year", "years", "week", "weeks", "month", "months",
+    "today", "tomorrow", "yesterday", "people",
+}
+
+EN_STOPWORDS = list(BASIC_STOPWORDS.union(CUSTOM_STOPWORDS))
 
 def preprocess(text: str) -> str:
     # Lowercase
