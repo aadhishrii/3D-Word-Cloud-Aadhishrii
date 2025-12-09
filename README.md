@@ -1,10 +1,10 @@
-3D Word Cloud – Aadhishrii
+# 3D Word Cloud – Aadhishrii
 
 This project visualizes topics from a news article as a 3D word cloud.
 The frontend uses React, TypeScript, and React Three Fiber.
 The backend uses FastAPI to fetch article text, extract keywords using TF-IDF, and return weighted words to the frontend.
 
-Project Structure
+## Project Structure
 Backend/
   app/
     main.py
@@ -25,8 +25,9 @@ Frontend/
 setup_and_run.sh
 README.md
 
-Running the Project
-Prerequisites
+## Running the Project
+
+###Prerequisites
 
 Python 3.9 or higher
 
@@ -58,7 +59,7 @@ Frontend: http://localhost:5173
 Open http://localhost:5173
  in your browser to use the application.
 
-How It Works
+## How It Works
 Backend (FastAPI)
 
 Fetches article HTML from a provided URL.
@@ -90,7 +91,7 @@ Renders a 3D word cloud using React Three Fiber.
 
 Word size and color are based on keyword weight.
 
-Libraries Used
+## Libraries Used
 Backend
 
 fastapi
@@ -121,7 +122,7 @@ three
 
 axios
 
-Notes
+## Notes
 
 Some websites block automated scraping; in such cases, the backend returns a readable error message.
 
