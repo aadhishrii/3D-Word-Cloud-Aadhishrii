@@ -103,7 +103,7 @@ POST /analyze
 
 ## Libraries Used
 
-Backend
+### Backend:
 
 fastapi
 
@@ -117,7 +117,7 @@ scikit-learn
 
 nltk
 
-Frontend
+### Frontend:
 
 react
 
