@@ -6,13 +6,13 @@ import { WordCloud3D } from "./components/WordCloud3D";
 import type { WordScore } from "./types";
 
 const SAMPLE_URLS = [
-  "https://www.bbc.com/news",
-  "https://www.cnn.com",
-  "https://www.nytimes.com/section/world",
+  "https://www.bbc.com/news/articles/cn8e2kvzen7o",
+  "https://www.cnn.com/2025/12/09/australia/australia-social-media-ban-starts-intl-hnk",
+  "https://www.theguardian.com/us-news/2025/dec/09/rumeysa-ozturk-tufts-student-resume-teaching-visa"
 ];
 
 function App() {
-  const [url, setUrl] = useState<string>(SAMPLE_URLS[0]);
+  const [url, setUrl] = useState<string>("");
   const [words, setWords] = useState<WordScore[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
